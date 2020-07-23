@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+{% block body %}
+<form action="{{ url_for('evaluate') }}" method=post>
+
+  <h1>Avaliação de candidatos</h1>
+
+  <h3>Seção - Dados Pessoais</h3>
+  <div class="user-box">
+          <label for="Nome">Nome Completo<span class="req">*</span></label>
+          <input type="text" name="nome" class="form-control" required="required" value="{{ request.form['nome'] }}"/></br></br>
+  </div>
+  <div class="user-box">
+          <label for="email">E-mail<span class="req">*</span></label>
+          <input type="email" name="email" class="form-control" value="{{ request.form['email'] }}" required="required"/>
+  </div>
+
+  <h3>Seção - Habilidades</h3>
+  <p>Selecione o seu nível de conhecimento para as skills abaixo. Onde 0 é nenhum conhecimento e 10 é total dominio.</p>
+  <label for="html">HTML</label>
+  <select name="html_skill" value="{{ request.form['html_skill'] }}">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
+  <label for="css">CSS</label>
+   <select name="css_skill" value="{{ request.form['css_skill'] }}">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="javascript">Javascript</label>
+   <select name="javascript_skill" value="{{ request.form['javascript_skill'] }}">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="Python">Python</label>
+   <select name="python_skill" value="{{ request.form['python_skill'] }}">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="django">Django</label>
+   <select name="django_skill" value="{{ request.form['django_skill'] }}">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="iOS">iOS</label>
+   <select name="ios_skill" value="{{ request.form['ios_skill'] }}">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+
+    <label for="android">CSS</label>
+   <select name="android_skill" value="{{ request.form['android_skill'] }}">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+   </select> </br></br>
+
+  <input type=submit value="Enviar"><small>ou pressione <strong>enter</strong></small>
+
+</form>
+{% endblock %}
+
+
