@@ -1,6 +1,7 @@
 # DevJobEvaluation
 
-This tool is a webpage for evaluating candidates for the developer vacancy. This required some informations, like:
+This tool is a webpage for evaluating candidates for the developer vacancy. This require some informations, like:
+
 Candidate information:
  - Name 
  - E-mail
@@ -15,12 +16,14 @@ Candidate skills - From 0 to 10 what is your skill in the technology below?
  - Android
 
 ### Prerequisites 
+
 Before you continue, please have met the following requirements:
 
 * Install the latest version of Python 3 and pip3
 * Windows, Linux and Mac OS supported
 
 ### Install
+
 In your terminal clone this repo:
 ```
 git clone https://github.com/carolinebrasil/DevJobEvaluation.git
